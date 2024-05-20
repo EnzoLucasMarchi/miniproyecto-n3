@@ -21,13 +21,17 @@ figure{
 .card-host{
     font-weight: bold;
     border: 1px solid black;
-    border-radius: 6px;
+    border-radius: 10px;
 
 }
 
 h6{
-    padding: .1rem;
+    padding: .2rem;
 }
+.card-stay-type{
+    color: gray;
+}
+
 
 .socialism{
     width: 1rem;
@@ -43,4 +47,5 @@ h6{
     white-space: nowrap;
     overflow: hidden;
     -webkit-line-clamp: 2;
+    font-weight: bold;
 }
