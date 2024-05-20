@@ -8,7 +8,7 @@ const CardGroup = ({data, filter, setFilter}) => {
                 <div className='section-header'>
                 {data.length && data[0]?.country && <h2> Stay in {data[0].country}</h2>}
                 {/* ojaldre con esta linea*/}
-                <p>{`${data.length}+stays`}</p>
+                <p>{`${filter.length}+stays`}</p>
                 </div>
                 <div className="cards-area">
                     <ul className="card-list">
