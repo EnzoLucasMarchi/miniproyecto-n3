@@ -15,7 +15,7 @@ figure{
 .card-details{
     display: flex;
     gap: 1rem;
-    align-items: flex-start;
+    align-items: auto;
 }
 
 .card-host{
