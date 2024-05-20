@@ -29,7 +29,10 @@ h6{
     padding: .1rem;
 }
 
-
+.socialism{
+    width: 1rem;
+    fill: red;
+}
 
 .card-rating{
     margin-left: auto;

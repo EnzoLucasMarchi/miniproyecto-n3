@@ -5,6 +5,12 @@
     padding: 1rem 2rem;
 }
 
+.airlogo{
+    fill: red;
+    width: 3rem;
+}
+
+
 .btn-search{
     width: 240px;
     height: 40px;
