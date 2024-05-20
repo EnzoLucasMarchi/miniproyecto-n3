@@ -21,7 +21,7 @@ function App() {
   return (
     <>
       <div className="body">
-                <Nav/>
+                <Nav data={data} setFilter={setFilter}/>
             <CardGroup data={data} filter={filter} setFilter={setFilter}/>
 
       </div>

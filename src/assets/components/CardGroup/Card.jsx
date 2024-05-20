@@ -4,7 +4,9 @@ export const Card = ({id, title, rating, type, photo, superHost}) => {
         <>
             <li className="card">
                 <div className="card-container">
-                    <img className="card-img" src={photo}></img>
+                    <figure>
+                        <img className="card-img" src={photo}></img>
+                    </figure>
                     <div className="card-body">
                         <div className='card-details'>
                         {superHost && <h6 className="card-host">SUPER HOST</h6>}
