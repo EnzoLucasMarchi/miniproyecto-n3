@@ -1,13 +1,16 @@
-export const Card = ({title, rating, type, photo}) => {
+import './Card.css'
+export const Card = ({id, title, rating, type, photo, superHost}) => {
     return (
         <>
-            <li>
+            <li className="card">
                 <div className="card-container">
                     <img className="card-img" src={photo}></img>
                     <div className="card-body">
-                        {isSuperHost && <h6 className="card-host"></h6>}
+                        <div className='card-details'>
+                        {superHost && <h6 className="card-host">SUPER HOST</h6>}
                         <h6 className="card-stay-type">{type}</h6>
                         <h6 className="card-ranting">{rating}</h6>
+                        </div>
                         <p className="card-title">{title}</p>
                     </div>
                 </div>

@@ -7,25 +7,22 @@ function App() {
   const [data, setData] = useState([])
   const [filter, setFilter] = useState([])
   const getData = async ()=>{
-    const rs = await fetch ('/stays.json')
-    const rsJson = await rs.json()
-    setData(rsJson)
-    setFilter(rsJson)
+    const rsJson = await ((await fetch ('/stays.json')).json())
+    const rs = await rsJson.map((stay, index)=>({...stay, id : index}))
+    setData(rs)
+    setFilter(rs)
   }
 
   useEffect(()=>{
+    
     getData()
   }, []);
 
   return (
     <>
       <div className="body">
-          <div className="nav-conatiner">
                 <Nav/>
-          </div>
-          <div className='card-section-container'>
-            <CardGroup/>
-          </div>
+            <CardGroup data={data} filter={filter} setFilter={setFilter}/>
 
       </div>
     </>
